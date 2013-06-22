@@ -1,8 +1,9 @@
-var Merkfix = function(numberOfPlayers, numberOfCards) {
+var Merkfix = function(nrOfPlayers, numberOfCards) {
 	var memorycards,
 	indexOfFirstRotated, 
 	indexOfSecondRotated,
 	activePlayer = 0,
+	numberOfPlayers = parseInt(nrOfPlayers),
 	points = new Array(numberOfPlayers);
 	
 	function createState(event) {

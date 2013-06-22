@@ -53,7 +53,7 @@
 		if (token.indexOfSecondRotated !== undefined) {
 			draw(token.indexOfSecondRotated, memorycards);
 		}
-		document.getElementById('title').innerHTML = 'Active: ' + token.activePlayer + ', Points: ' + token.points;
+		document.getElementById('title').innerHTML = 'A: ' + token.activePlayer + ', P: ' + token.points;
 	}
 	function createClickHandler(index) {
 		return function(e) {
