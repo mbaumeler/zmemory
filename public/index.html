@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+<html manifest="offline.appcache.php">
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57"   href="splash/z57.png"  />
+    <link rel="apple-touch-icon" sizes="72x72"   href="splash/z72.png" />
+    <link rel="apple-touch-icon" sizes="80x80"   href="splash/z80.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="splash/z114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="android-only" href="splash/z57.png" />
+    <link rel="apple-touch-startup-image" href="splash/z320_460.png"   media="(device-width: 320px)">
+    <link rel="apple-touch-startup-image" href="splash/z640_920.png"   media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" >
+    <link rel="apple-touch-startup-image" href="splash/z768_1004.png"  media="(device-width: 768px) and (orientation: portrait)" >
+    <link rel="apple-touch-startup-image" href="splash/z748_1024.png"  media="(device-width: 768px) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="splash/z1536_2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" >
+    <link rel="apple-touch-startup-image" href="splash/z2048_1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" >
+	<title>Zühlke Memory</title>
+</head>
+<body>
+    <div class="container" >
+        <div id="playground">
+            <div class="cardcontainer">
+                <div class="spacer"></div>
+                <div class="cardcontent row0 cell0"></div>
+                <div class="cardcontent row1 cell0"></div>
+                <div class="cardcontent row2 cell0"></div>
+                <div class="cardcontent row3 cell0"></div>
+                <div class="cardcontent row0 cell1"></div>
+                <div class="cardcontent row1 cell1"></div>
+                <div class="cardcontent row2 cell1"></div>
+                <div class="cardcontent row3 cell1"></div>
+                <div class="cardcontent row0 cell2"></div>
+                <div class="cardcontent row1 cell2"></div>
+                <div class="cardcontent row2 cell2"></div>
+                <div class="cardcontent row3 cell2"></div>
+                <div class="cardcontent row0 cell3"></div>
+                <div class="cardcontent row1 cell3"></div>
+                <div class="cardcontent row2 cell3"></div>
+                <div class="cardcontent row3 cell3"></div>
+            </div>
+        </div>
+        <div id="menubar">
+            <span class="title" id="title">HTML5</span>
+        </div>
+		<div id="menu">
+            <span class="title">Settings</span>
+			<div class="button" id="newgamebutton">Neues Spiel</div>
+			<div class="button" id="newservergame">New Servergame</div>
+			<div class="button" id="joinservergame">Join Servergame</div>
+        </div>
+    </div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/memory.js"></script>
+    <script src="js/script.js"></script>
+	
+</body>
+</html>
