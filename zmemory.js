@@ -12,8 +12,13 @@ app.configure(function(){
 	app.use(express.bodyParser());
 	app.use(express.static(path.join(__dirname, 'public')));
 });  
-  
-server.listen(80);
+
+io.configure(function () { 
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+}); 
+
+server.listen(process.env.PORT || 3000);
 
 io.sockets.on('connection', function (socket) {
 	socket.on('createGame', function (token) {
